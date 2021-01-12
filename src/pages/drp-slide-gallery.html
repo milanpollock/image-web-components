@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRP Slide Gallery</title>
+    <script
+      type="module"
+      src="/build/darkrushphotography-image-web-components.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="/build/darkrushphotography-image-web-components.js"
+    ></script>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        background-color: rgba(33, 33, 33, 0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <drp-slide-gallery height="400px">
+        <div slot="previous-icon">p</div>
+        <div slot="next-icon">n</div>
+        <div slot="play-icon">g</div>
+        <div slot="pause-icon">s</div>
+      </drp-slide-gallery>
+    </div>
+  </body>
+  <script>
+    const imageNumbers = [];
+    for (let i = 0; i !== 37; i++) {
+      imageNumbers.push(i + 1);
+    }
+
+    const images = imageNumbers.map(imageNumber => {
+      return {
+        imageNumber: imageNumber,
+        fileName: `home-page-${imageNumber}.jpg`,
+        fileNameWithoutExtension: `home-page-${imageNumber}`,
+        thumbnailSrc: `https://dark-rush-photography-images.azureedge.net/dark-rush-photography-content/home-page/fill/home-page-${imageNumber}.jpg`,
+        imageSrc: `https://dark-rush-photography-images.azureedge.net/dark-rush-photography-content/home-page/small/home-page-${imageNumber}.jpg`,
+        large: `https://dark-rush-photography-images.azureedge.net/dark-rush-photography-content/home-page/large/home-page-${imageNumber}.jpg`,
+        width: 0,
+        height: 0,
+      };
+    });
+    var imageGallery = document.querySelector('drp-slide-gallery');
+    imageGallery.images = JSON.stringify(images);
+    imageGallery.autoPlay = true;
+  </script>
+</html>

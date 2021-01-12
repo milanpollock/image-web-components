@@ -1,0 +1,33 @@
+{
+  "name": "@dark-rush-photography/image-web-components",
+  "version": "0.0.16",
+  "description": "Image Web Components used by Dark Rush Photography",
+  "main": "dist/index.js",
+  "module": "./dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/custom-elements/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/image-web-components/image-web-components.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "test": "jest",
+    "dev": "stencil build --dev --watch --serve",
+    "build": "stencil build --docs",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@stencil/core": "^1.17.3",
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "jest": "^26.4.2",
+    "jest-cli": "^26.4.2"
+  }
+}
