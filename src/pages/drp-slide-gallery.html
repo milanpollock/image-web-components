@@ -31,23 +31,16 @@
     </div>
   </body>
   <script>
-    const imageNumbers = [];
-    for (let i = 0; i !== 37; i++) {
-      imageNumbers.push(i + 1);
-    }
-
-    const images = imageNumbers.map(imageNumber => {
-      return {
+    const images = {
         imageNumber: imageNumber,
-        fileName: `home-page-${imageNumber}.jpg`,
-        fileNameWithoutExtension: `home-page-${imageNumber}`,
-        thumbnailSrc: `https://dark-rush-photography-images.azureedge.net/dark-rush-photography-content/home-page/fill/home-page-${imageNumber}.jpg`,
-        imageSrc: `https://dark-rush-photography-images.azureedge.net/dark-rush-photography-content/home-page/small/home-page-${imageNumber}.jpg`,
-        large: `https://dark-rush-photography-images.azureedge.net/dark-rush-photography-content/home-page/large/home-page-${imageNumber}.jpg`,
+        fileName: `flag-with-airplane.jpg`,
+        fileNameWithoutExtension: `flag-with-airplane`,
+        thumbnailSrc: `https://drpblobsa.blob.core.windows.net/home/large/flag-with-airplane.jpg`,
+        imageSrc: `https://drpblobsa.blob.core.windows.net/home/large/flag-with-airplane.jpg`,
+        large: `https://drpblobsa.blob.core.windows.net/home/large/flag-with-airplane.jpg`,
         width: 0,
         height: 0,
       };
-    });
     var imageGallery = document.querySelector('drp-slide-gallery');
     imageGallery.images = JSON.stringify(images);
     imageGallery.autoPlay = true;

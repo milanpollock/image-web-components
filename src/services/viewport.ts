@@ -28,3 +28,4 @@ const isInViewport = (
 };
 
 export { getViewportWidth, getViewportHeight, isInViewport };
+

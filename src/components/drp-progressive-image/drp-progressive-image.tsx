@@ -4,7 +4,6 @@ import {
   getViewportHeight,
   isInViewport,
 } from '../../services/viewport';
-import { canUseWebP, getDevicePixelRatio } from "../../services/image-source";
 
 @Component({
   tag: 'drp-progressive-image',
@@ -106,11 +105,6 @@ export class DrpProgressiveImage {
           height: this.height,
           backgroundImage: `url("${this.thumbnailSrc}")`,
         };
-
-    // @ts-ignore
-    console.log(canUseWebP(window));
-
-    getDevicePixelRatio(window);
 
     return (
       <Host>
