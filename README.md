@@ -149,3 +149,7 @@ After service worker line
 > "include": [
 > "src", "\_\_tests\_\_"
 > ],
+
+## popup-info-box-web-component source
+
+The source code in the popup-info-box-web-component folder is for demonstrating the pillars of web components during presentations

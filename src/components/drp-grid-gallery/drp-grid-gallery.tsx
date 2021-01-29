@@ -4,6 +4,7 @@ import ResizeObserver from 'resize-observer-polyfill';
 
 import { findIdealNodeSearch } from '../../services/findIdealNodeSearch';
 import { computeRowLayout } from '../../services/justified';
+/******** Pilar 4 - ES Modules: importing functionality from modules ResizeObserver is a default export while the others are named exports **************/
 
 @Component({
   tag: 'drp-grid-gallery',

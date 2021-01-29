@@ -18,15 +18,19 @@
         margin: 0;
         background-color: rgba(33, 33, 33, 0.95);
       }
+      .text-button {
+        color: lightcoral;
+      }
     </style>
   </head>
   <body>
     <div>
+      <!-- ******** Pilar 3 - HTML Templates and Slots: named slots specify what is displayed in each slot, light DOM styles do affect slot content ************** -->
       <drp-slide-gallery height="400px">
-        <div slot="previous-icon">p</div>
-        <div slot="next-icon">n</div>
-        <div slot="play-icon">g</div>
-        <div slot="pause-icon">s</div>
+        <div slot="previous-icon"><span class="text-button">prev</span></div>
+        <div slot="next-icon">next</div>
+        <div slot="play-icon">play</div>
+        <div slot="pause-icon">pause</div>
       </drp-slide-gallery>
     </div>
   </body>
@@ -85,8 +89,8 @@
         height: 316,
       },
     ];
-    var imageGallery = document.querySelector('drp-slide-gallery');
-    imageGallery.images = JSON.stringify(images);
-    imageGallery.autoPlay = true;
+    var slideGallery = document.querySelector('drp-slide-gallery');
+    slideGallery.images = JSON.stringify(images);
+    slideGallery.autoPlay = true;
   </script>
 </html>
