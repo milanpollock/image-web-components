@@ -31,16 +31,60 @@
     </div>
   </body>
   <script>
-    const images = {
-        imageNumber: imageNumber,
-        fileName: `flag-with-airplane.jpg`,
-        fileNameWithoutExtension: `flag-with-airplane`,
-        thumbnailSrc: `https://drpblobsa.blob.core.windows.net/home/large/flag-with-airplane.jpg`,
-        imageSrc: `https://drpblobsa.blob.core.windows.net/home/large/flag-with-airplane.jpg`,
-        large: `https://drpblobsa.blob.core.windows.net/home/large/flag-with-airplane.jpg`,
-        width: 0,
-        height: 0,
-      };
+    const images = [
+      {
+        imageNumber: 0,
+        fileName: 'oakland-cemetery-illumine-2019-00004.jpg',
+        fileNameWithoutExtension: 'oakland-cemetery-illumine-2019-00004',
+        thumbnailSrc:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/thumbnail/oakland-cemetery-illumine-2019-00004.jpg',
+        imageSrc:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/small/oakland-cemetery-illumine-2019-00004.jpg',
+        large:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/large/oakland-cemetery-illumine-2019-00004.jpg',
+        width: 512,
+        height: 433,
+      },
+      {
+        imageNumber: 1,
+        fileName: 'oakland-cemetery-illumine-2019-00001.jpg',
+        fileNameWithoutExtension: 'oakland-cemetery-illumine-2019-00001',
+        thumbnailSrc:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/thumbnail/oakland-cemetery-illumine-2019-00001.jpg',
+        imageSrc:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/small/oakland-cemetery-illumine-2019-00001.jpg',
+        large:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/large/oakland-cemetery-illumine-2019-00001.jpg',
+        width: 512,
+        height: 353,
+      },
+      {
+        imageNumber: 2,
+        fileName: 'oakland-cemetery-illumine-2019-00015.jpg',
+        fileNameWithoutExtension: 'oakland-cemetery-illumine-2019-00015',
+        thumbnailSrc:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/thumbnail/oakland-cemetery-illumine-2019-00015.jpg',
+        imageSrc:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/small/oakland-cemetery-illumine-2019-00015.jpg',
+        large:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/large/oakland-cemetery-illumine-2019-00015.jpg',
+        width: 512,
+        height: 329,
+      },
+      {
+        imageNumber: 3,
+        fileName: 'oakland-cemetery-illumine-2019-00006.jpg',
+        fileNameWithoutExtension: 'oakland-cemetery-illumine-2019-00006',
+        thumbnailSrc:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/thumbnail/oakland-cemetery-illumine-2019-00006.jpg',
+        imageSrc:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/small/oakland-cemetery-illumine-2019-00006.jpg',
+        large:
+          'https://drpblobsa.blob.core.windows.net/stories/2019/oakland-cemetery-illumine-2019/images/large/oakland-cemetery-illumine-2019-00006.jpg',
+        width: 512,
+        height: 316,
+      },
+    ];
     var imageGallery = document.querySelector('drp-slide-gallery');
     imageGallery.images = JSON.stringify(images);
     imageGallery.autoPlay = true;
